@@ -21,25 +21,57 @@
             padding: 20px;
         }
 
-        /* Header */
         header {
-            position: relative;
-            background: url('/homerobot.png') no-repeat center center;
-            background-size: cover;
-            height: 60vh;
-            color: white;
+    position: relative;
+    background: url('http://www.homerobot.life/homerobot.png') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column; /* Stack the header content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 350px; /* Ensure enough space for the text */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+header h1 {
+    font-size: 4rem; /* Increase font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 1;
+    margin: 0; /* Remove any default margin */
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    z-index: 1;
+    margin: 0; /* Remove any default margin */
+}
+
+        /* Image Section (Below Header) */
+        .image-container {
             text-align: center;
-            padding-top: 100px;
+            padding: 30px 0;
         }
-        header h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 20px;
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Sections */
@@ -126,7 +158,7 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
             .features {
                 flex-direction: column;
@@ -136,16 +168,20 @@
                 width: 90%;
             }
         }
-
     </style>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Welcome to HomeRobot</h1>
+        <h1>Welcome to HomeRobot</h1></br>
         <p>Empowering Elderly Care, Home Security, and Companionship with Cutting-edge Robotics</p>
     </header>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="http://www.homerobot.life/homerobot.png" alt="HomeRobot">
+    </div>
 
     <!-- Problem Statement Section -->
     <section class="problem">

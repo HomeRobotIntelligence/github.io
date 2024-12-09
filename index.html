@@ -3,124 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Robot - The smart companion for your home.">
-    <title>Home Robot - Your Smart Home Companion</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeRobot - Revolutionizing Elderly Care and Home Security</title>
     <style>
-        body {
+        /* Global Styles */
+        body, html {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f7f6;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
-            line-height: 1.6;
         }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
         header {
-            background-color: #3E4A89;
+            position: relative;
+            background: url('/homerobot.png') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
             color: white;
-            padding: 50px 20px;
             text-align: center;
+            padding-top: 100px;
         }
         header h1 {
             font-size: 3rem;
-            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         header p {
             font-size: 1.2rem;
+            margin-top: 20px;
         }
-        .main-content {
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Problem Statement Section */
+        .problem {
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        /* Solution Section */
+        .solution {
+            background-color: #ffeb3b;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        /* Product Overview Section */
+        .product-overview {
+            background-color: #81c784;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        /* Vision and Future Plans Section */
+        .vision {
+            background-color: #ff8a65;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        /* Feature List */
+        .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 30px 20px;
+            gap: 20px;
         }
-        .feature {
-            background: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .feature-item {
+            background-color: white;
             padding: 20px;
-            width: 100%;
-            max-width: 300px;
-            margin-bottom: 30px;
-            text-align: center;
             border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .feature:hover {
+        .feature-item:hover {
             transform: translateY(-10px);
         }
-        .feature img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .feature h3 {
-            color: #3E4A89;
+
+        .feature-item h3 {
             font-size: 1.5rem;
-            margin: 20px 0;
+            color: #333;
         }
-        .feature p {
-            font-size: 1rem;
-            color: #666;
-        }
-        .feature-button {
-            background-color: #3E4A89;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .feature-button:hover {
-            background-color: #2e3d69;
-        }
+
+        /* Footer */
         footer {
-            background-color: #3E4A89;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
+
+        /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .main-content {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .features {
                 flex-direction: column;
                 align-items: center;
             }
+            .feature-item {
+                width: 90%;
+            }
         }
+
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Home Robot</h1>
-    <p>Your Smart Companion for a Better Home</p>
-</header>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to HomeRobot</h1>
+        <p>Empowering Elderly Care, Home Security, and Companionship with Cutting-edge Robotics</p>
+    </header>
 
-<section class="main-content">
-    <div class="feature">
-        <img src="https://via.placeholder.com/300x200?text=Robot+1" alt="Home Robot Feature 1">
-        <h3>Smart Navigation</h3>
-        <p>Navigate your home with precision using advanced sensors and AI-driven algorithms.</p>
-        <a href="#" class="feature-button">Learn More</a>
-    </div>
+    <!-- Problem Statement Section -->
+    <section class="problem">
+        <h2>Problem Statement</h2>
+        <p><strong>Elderly Care Needs:</strong> Increasing need for monitoring and companionship for elderly individuals living alone.</p>
+        <p><strong>Home Security Challenges:</strong> Traditional systems often fail to deter criminals effectively.</p>
+        <p><strong>Home Surveillance Limitations:</strong> Existing solutions lack comprehensive coverage and raise privacy concerns.</p>
+        <p><strong>Limitations of Current Security Systems:</strong> Stationary systems lack mobility and interactivity.</p>
+    </section>
 
-    <div class="feature">
-        <img src="https://via.placeholder.com/300x200?text=Robot+2" alt="Home Robot Feature 2">
-        <h3>Voice Control</h3>
-        <p>Control your robot hands-free with voice commands for maximum convenience.</p>
-        <a href="#" class="feature-button">Learn More</a>
-    </div>
+    <!-- Solution Section -->
+    <section class="solution">
+        <h2>Our Solution</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>Autonomous Mobility</h3>
+                <p>Comprehensive home surveillance through mobile patrolling.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Intelligent Sensing</h3>
+                <p>AI-driven vision, speech, and hearing capabilities for better understanding and interaction.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Human-like Companionship</h3>
+                <p>Engages with elderly individuals to reduce loneliness and provide emotional support.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Proactive Security</h3>
+                <p>Detects intruders, environmental hazards, and more to ensure a safe living environment.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="feature">
-        <img src="https://via.placeholder.com/300x200?text=Robot+3" alt="Home Robot Feature 3">
-        <h3>Home Security</h3>
-        <p>Monitor your home with built-in cameras and alert you of unusual activity.</p>
-        <a href="#" class="feature-button">Learn More</a>
-    </div>
-</section>
+    <!-- Product Overview Section -->
+    <section class="product-overview">
+        <h2>Product Overview</h2>
+        <p><strong>Design:</strong> Sleek and modern design fitting seamlessly into homes.</p>
+        <p><strong>Technology:</strong> AI, Machine Learning, and Advanced Sensors for intelligent sensing.</p>
+        <p><strong>Seamless Connectivity:</strong> Wi-Fi and 5G integration for real-time communication and control.</p>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Home Robot. All Rights Reserved.</p>
-</footer>
+    <!-- Vision and Future Plans Section -->
+    <section class="vision">
+        <h2>Vision and Future Plans</h2>
+        <p><strong>Protect. Care. Connect.</strong></p>
+        <p><strong>Long-Term Vision:</strong> Enhance lives with robotic solutions for safety, comfort, and companionship.</p>
+        <p><strong>Innovation Roadmap:</strong> Continuous AI development, smart home integration, and enhanced user experience to push the boundaries of robotics and home automation.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 HomeRobot. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
